@@ -16,22 +16,32 @@ Activate the virtual environment:
     .venv\Scripts\Activate.ps1
 
 ## 2. Install dependencies
-Install all required packages from `requirements.txt`:
+Install all required packages from `requirments.txt`:
 
-    pip install -r requirements.txt
+    pip install -r requirments.txt
 
-## 3. Create a .env file
+## 3. Create a .env file 
+## move to Asgadeo 
 In the project root, create a `.env` file and add the following:
 
     AUTH0_DOMAIN=
     AUTH0_CLIENT_ID=
     AUTH0_CLIENT_SECRET=
     AUTH0_AUDIENCE=https://your-api-identifier
-    AUTH0_CALLBACK_URL=http://localhost:8000/callback
+    AUTH0_CALLBACK_URL=http://localhost:8001/callback
+
+    new env
+    ```
     SESSION_SECRET=
     DATABASE_URL=sqlite:///./app.db
     APP_DEBUG=true
-    PORT=8000
+    PORT=8001
+
+    ASGARDEO_DOMAIN=
+    ASGARDEO_CLIENT_ID=
+    ASGARDEO_CLIENT_SERECT=
+    ASGARDEO_CALLBACK_URL=http://localhost:8001/callback
+    ```
 
 Make sure to fill in the values for Auth0 credentials and `SESSION_SECRET` (at least 32 characters).
 
@@ -43,6 +53,6 @@ Start the FastAPI app using:
 ## 5. Access the application
 Open your browser and navigate to:
 
-    http://localhost:8000
+    http://localhost:8001
 
 You should see the app running.
