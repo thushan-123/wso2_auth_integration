@@ -1,4 +1,4 @@
-# Info Security FastAPI App - Setup Instructions
+# Auth FastAPI App - Setup Instructions
 
 ## change file 
 
