@@ -1,0 +1,12 @@
+
+
+{% extends 'base.html' %}
+{% block title %}SE/2021/011 H.T.Madhusankha + Auth0{% endblock %}
+{% block content %}
+{% if user %}
+<p>Welcome, {{ user.name or user.email }}!</p>
+<img src="{{ user.picture }}" alt="avatar" style="max-height:64px;border-radius:50%" />
+{% else %}
+<p>Please <a href="/login">log in</a> to manage your profile.</p>
+{% endif %}
+{% endblock %}

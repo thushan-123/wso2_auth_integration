@@ -1,0 +1,33 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}SE/2021/011 H.T.Madhusankha + Auth0{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <header class="container">
+        <h1>SE/2021/011 H.T.Madhusankha Auth0 + SQLite</h1>
+        <nav>
+            <a href="/">Home</a>
+            {% if user %}
+            <a href="/profile">Profile</a>
+            <a href="/logout">Logout</a>
+            {% else %}
+            <a href="/login">Login</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+
+</html>
