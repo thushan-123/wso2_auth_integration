@@ -1,7 +1,7 @@
 # Auth FastAPI App - Setup Instructions
 
 ## change file 
-
+<h5>medium blog - https://medium.com/@thushanmadusanka456/wso2-asgardeo-646be2d1df02</h5>
 <h5>auth0 repo - https://github.com/thushan-123/Info_sec_uni_project.git </h5>
 
 <img src="./img.png" />
