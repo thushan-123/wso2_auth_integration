@@ -7,11 +7,11 @@
 <img src="./img.png" />
 
 ## 1. Create a virtual environment
-Run the following command to create a Python virtual environment:
+Run the following command to create a Python virtual environment :
 
     python3 -m venv .venv
 
-Activate the virtual environment:
+Activate the virtual environment :
 
 - On macOS/Linux:
 
@@ -28,7 +28,7 @@ Install all required packages from `requirments.txt`:
 
 ## 3. Create a .env file 
 ## move to Asgadeo 
-In the project root, create a `.env` file and add the following:
+In the project root, create a `.env` file and add the following :
 
     AUTH0_DOMAIN=
     AUTH0_CLIENT_ID=
@@ -57,7 +57,7 @@ Start the FastAPI app using:
     python3 -m app.main
 
 ## 5. Access the application
-Open your browser and navigate to:
+Open your browser and navigate to :
 
     http://localhost:8001
 
