@@ -11,12 +11,20 @@ from datetime import datetime
 router = APIRouter()
 
 oauth = OAuth()
+# oauth.register(
+#     name="asgardeo",
+#     client_id=settings.ASGARDEO_CLIENT_ID,
+#     client_secret=settings.ASGARDEO_CLIENT_SERECT,  # (typo kept for consistency)
+#     client_kwargs={"scope": "openid profile email"},
+#     server_metadata_url=f"{settings.ASGARDEO_DOMAIN}/.well-known/openid-configuration",
+# )
+
 oauth.register(
     name="asgardeo",
     client_id=settings.ASGARDEO_CLIENT_ID,
-    client_secret=settings.ASGARDEO_CLIENT_SERECT,  # (typo kept for consistency)
+    client_secret=settings.ASGARDEO_CLIENT_SERECT, 
     client_kwargs={"scope": "openid profile email"},
-    server_metadata_url=f"{settings.ASGARDEO_DOMAIN}/.well-known/openid-configuration",
+    server_metadata_url=f"{settings.ASGARDEO_DOMAIN}/oauth2/token/.well-known/openid-configuration",
 )
 
 @router.get("/login")
